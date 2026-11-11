@@ -3,6 +3,13 @@
 **Physics AI High-Quality Data · FEA Error Analysis** — turn failed simulations into verified, labeled training data.
 
 <div align="center">
+  <a href="https://github.com/chanyanxuan/jiejian-physai-data"><img src="https://img.shields.io/github/stars/chanyanxuan/jiejian-physai-data?style=social" alt="GitHub stars"></a>
+  <a href="https://creativecommons.org/licenses/by-nc/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg" alt="License: CC BY-NC 4.0"></a>
+  <a href="http://8.134.127.252"><img src="https://img.shields.io/badge/在线试用-免费开放-7c5cff" alt="在线试用"></a>
+  <a href="https://github.com/chanyanxuan/jiejian-physai-data"><img src="https://img.shields.io/badge/状态-内测进行中-5eead4" alt="内测"></a>
+</div>
+
+<div align="center">
   <img src="assets/logo.png" width="120" alt="解蹇 · 水山蹇卦象">
 </div>
 
@@ -152,6 +159,16 @@
 
 核心实现（判案规则、修复库、知识库、缺陷注入器）为商业机密，本仓库开放的是**数据与结果**。
 
+## 快速开始（3 步，1 分钟上手）
+
+```
+① 打开 http://8.134.127.252 → 输入邀请码（JIEJIAN-001 / 002 / 003）
+② 左侧拖入报错的仿真文件（.inp + .msg）→ 点"开始诊断"
+③ 约 1 分钟拿到：机理级报告 + 修复后的模型文件 + 改动清单
+```
+
+想体验"仿真 vs 试验对标"？右侧卡片拖入仿真文件 + 试验数据表 + 一句描述即可。
+
 ## 免费试用
 
 产品正在**试用阶段**。邀请码（每个码限 20 次分析，用完即止）：
@@ -162,13 +179,25 @@ JIEJIAN-001   JIEJIAN-002   JIEJIAN-003
 
 访问 [http://8.134.127.252](http://8.134.127.252)，输入邀请码即可开始。
 
+## 发展路线图
+
+| 阶段 | 内容 | 状态 |
+| --- | --- | --- |
+| **现在** | 两大功能上线内测：报错分析（诊断+修复+验证闭环）、仿真-试验差异分析；17/17 基准回归 | ✅ 运行中 |
+| **近期** | 错误案例库扩充至百级；缺陷注入器批量生产合成错误数据；全自动进化（案例→规则→基准闸门） | 🚧 开发中 |
+| **中期** | 万级"错误-诊断-修复-验证"轨迹数据底座；数据 API 与授权分级；企业内网部署版 | 📋 规划中 |
+| **愿景** | 成为物理 AI 时代的**高质量仿真数据基础设施**——每一份失败仿真都变成训练资产 | 🎯 |
+
 ## 我们在融资
 
 解蹇目前处于试用阶段。**我们需要资金做得更好**：扩充错误案例库、扩展缺陷覆盖、建立万级数据底座、支撑物理 AI 的数据需求。
 
 - 投资合作 / 数据授权 / 企业内网部署：**微信 CYX241**
 - 邮箱：achenyanxuan@163.com
+- GitHub Issues 提交反馈：本仓库 Issues 区
 
 ---
+
+⭐ **如果这个项目对你有用，请点个 Star** —— 你的每一次 Star，都在帮物理 AI 时代的数据基础设施多一份关注。
 
 *山上有水，险阻在前。我们不回避险阻——我们把它变成资产。*
