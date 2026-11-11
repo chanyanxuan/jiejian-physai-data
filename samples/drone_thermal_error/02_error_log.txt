@@ -1,0 +1,18 @@
+求解终止记录（摘录）
+====================
+
+[.dat]
+***ERROR: TOO MANY ATTEMPTS MADE FOR THIS INCREMENT: ANALYSIS TERMINATED
+
+[.msg]
+***WARNING: THE ABSOLUTE ZERO TEMPERATURE HAS NOT BEEN SPECIFIED FOR COMPUTING
+
+[求解过程摘要]
+分析步 Thermal（第 4 步）第 1 增量步：
+  - 连续 5 次尝试均不收敛（U）
+  - 增量按 0.75 逐级折减，触发尝试次数上限
+  - 残差平均力 1.02 → 27.5 单调上升
+
+[奇异记录]
+20 条奇异记录全部指向同一位置：节点 10，自由度 11（温度）
+零主元量级约 1E+12
