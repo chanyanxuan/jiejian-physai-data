@@ -1,0 +1,17 @@
+{
+  "case_id": "drone_thermal_error_001",
+  "fixed_inp": "04_fixed.inp",
+  "solver": "ABAQUS",
+  "status": "COMPLETED",
+  "steps_completed": 5,
+  "steps_total": 5,
+  "actions": [
+    {
+      "type": "add_boundary_temperature",
+      "scope": "coupled_step",
+      "target": "Motors",
+      "detail": "在热-力耦合分析步内为 Motors 节点集补充温度边界（DOF 11 = 100.0），并在后续分析步重置机械边界"
+    }
+  ],
+  "notes": "修复后重新提交求解，5 个分析步（Hover / Climb / Gust / Thermal / Landing）全部完成"
+}
