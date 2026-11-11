@@ -132,8 +132,8 @@
 </div>
 <p align="center"><sub>差异性分析报告界面：逐测点误差统计 + 差异模式分类 + 机理归因 + 修正模型下载</sub></p>
 
+> **完整的交付文档已上传本仓库**：原始 STEP 模型、修复前/后 inp、报错现场全套日志、诊断报告、改动清单、差异性分析报告、修正模型、测点试验数据——详见 [samples/drone_thermal_error](samples/drone_thermal_error)。
 > 输入支持：`.inp` / `.msg` / `.dat` / `.sta` / `.log` / `.odb` / `.rpt` / 表格 / Word / PDF / 图片 / 自然语言描述。
-> 完整样例数据包见 [samples/drone_thermal_error](samples/drone_thermal_error)。
 
 ## 📄 报告长什么样：无人机案例报告详解
 
