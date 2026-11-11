@@ -1,0 +1,20 @@
+{
+  "case_id": "drone_thermal_error_001",
+  "error_type": "TOO MANY ATTEMPTS",
+  "solver": "ABAQUS",
+  "element_types": ["C3D8T"],
+  "ndof": 3,
+  "findings": [
+    {
+      "type": "temperature_unconstrained",
+      "severity": "critical",
+      "location": {"node": 10, "dof": 11},
+      "pivot_magnitude": 1e12,
+      "mechanism": {
+        "physical": "温度场存在刚体平移零能模态——恒定温度平移不改变任何温度梯度与热流，与结构刚体模态同构",
+        "program": "模型全部采用 C3D8T 单元（激活 DOF 11 温度自由度），但 5 个分析步均未施加温度边界条件；数据文件同时记录绝对零度未定义"
+      }
+    }
+  ],
+  "checker_version": "v2.1"
+}
