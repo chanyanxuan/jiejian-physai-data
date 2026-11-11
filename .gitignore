@@ -1,0 +1,6 @@
+# 公开仓库忽略项
+.DS_Store
+Thumbs.db
+*.tmp
+_*.py
+_*.png
