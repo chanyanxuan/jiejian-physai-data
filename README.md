@@ -1,4 +1,6 @@
-# 解蹇 · JieJian
+# 解蹇 · JieJian —— FEA 错误分析 · 物理 AI 高质量数据底座
+
+**Physics AI High-Quality Data · FEA Error Analysis** — turn failed simulations into verified, labeled training data.
 
 <div align="center">
   <img src="assets/logo.png" width="120" alt="解蹇 · 水山蹇卦象">
@@ -8,7 +10,11 @@
 
 > 我们不产生物理 AI 的数据——**我们把低质量、无用的数据，变成高质量、有价值的数据。**
 
+**Keywords**: `FEA` `CAE` `Abaqus` `simulation` `error-analysis` `finite-element` `physics-ai` `sim-to-real` `dataset` `diagnosis` `repair` `verification` `digital-twin` `engineering-data` `LLM`
+
 **在线试用**：[http://8.134.127.252](http://8.134.127.252)
+
+![产品首页](assets/ui_home.png)
 
 ---
 
@@ -59,7 +65,7 @@
 每次分析都是一次数据生产：产出**带求解验证、机理标签、用户反馈**的错误-诊断-修复-验证闭环数据（见 [schema](schema/data_schema.md) 与 [质量体系](docs/quality.md)）。这些是训练下一代物理 AI 的黄金数据。
 
 ### ⑤ 案例库与知识沉淀
-内置多物理场案例库（机械臂、无人机、外骨骼、汽车、客机等），支持三维模型查看与求解动画；内置专业可沉淀知识库。
+内置多物理场案例库（机械臂、无人机、外骨骼、汽车、客机等 11 个案例），支持三维模型查看与求解动画；内置 2.3 万条官方手册知识块检索。
 
 ![案例库](assets/ui_cases.png)
 
@@ -131,6 +137,20 @@
 | 报告生成 | 30 秒 ~ 3 分钟（学术格式 Word） |
 | 修复验证 | 修复后重新提交求解验证通过 |
 | 报告可信度 | 一致性校验 + 基准回归双闸门 |
+
+## 原理（概览）
+
+```
+判案层（确定性规则引擎）→ 判定缺陷与机理（规则当尺）
+        ↓
+白名单干预 → 自动修复 → 重新求解验证（闭环）
+        ↓
+大模型撰写机理报告（LLM 当笔，只论证判案事实，不编数据）
+        ↓
+一致性校验 + 基准回归 → 出厂
+```
+
+核心实现（判案规则、修复库、知识库、缺陷注入器）为商业机密，本仓库开放的是**数据与结果**。
 
 ## 免费试用
 
